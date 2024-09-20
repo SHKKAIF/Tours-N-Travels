@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <meta name="description" content="Book your travel and accommodations with ease using our simple booking form.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="itineraries.html">Itineraries</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main
+        style="padding: 2rem; max-width: 600px; margin: 2rem auto; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+        <section>
+            <h2 style="text-align: center; color: #007BFF; margin-bottom: 1.5rem;">Book Your Trip</h2>
+            <form id="booking-form" style="display: flex; flex-direction: column; gap: 1rem;">
+                <label for="destination" style="font-weight: bold;">Destination:</label>
+                <select id="destination"
+                    style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;">
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="italy">Italy</option>
+                    <option value="turkey">Turkey</option>
+                </select>
+                <label for="check-in" style="font-weight: bold;">Check-in Date:</label>
+                <input type="date" id="check-in" required
+                    style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;">
+                <label for="check-out" style="font-weight: bold;">Check-out Date:</label>
+                <input type="date" id="check-out" required
+                    style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;">
+                <button type="submit"
+                    style="background-color: #007BFF; color: white; border: none; padding: 0.75rem; border-radius: 5px; font-size: 1.1rem; cursor: pointer; transition: background-color 0.3s;">Book
+                    Now</button>
+            </form>
+        </section>
+    </main>
+    <footer
+        style="background: #007BFF; color: white; text-align: center; padding: 1rem; width: 100%; position: fixed; bottom: 0; left: 0;">
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
